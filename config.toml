@@ -11,7 +11,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [[menu.main]]
     name = "WYC"
-    url = "/https://weibo.com/u/6744235951?is_hot=1/"
+    url = "https://weibo.com/u/6744235951?is_hot=1"
 [[menu.main]]
     name = "Music"
     url = "https://www.bilibili.com/video/av45698194/"
