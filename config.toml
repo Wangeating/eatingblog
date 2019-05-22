@@ -10,14 +10,14 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "WYC"
+    url = "/https://weibo.com/u/6744235951?is_hot=1/"
 [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/rstudio/blogdown"
+    name = "Music"
+    url = "https://www.bilibili.com/video/av45698194/"
 [[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/rstudio"
+    name = "Me"
+    url = "https://weibo.com/u/2953268071?topnav=1"
 
 [params]
     description = "A website built through Hugo and blogdown."

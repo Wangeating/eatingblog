@@ -6,20 +6,18 @@
     <description>Recent content in R on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 21 May 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>追星纪实</title>
+      <link>/2019/05/21/%E8%BF%BD%E6%98%9F%E7%BA%AA%E5%AE%9E/</link>
+      <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
       
-      <guid>/2015/07/23/hello-r-markdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/2019/05/21/%E8%BF%BD%E6%98%9F%E7%BA%AA%E5%AE%9E/</guid>
+      <description>文邺辰今天又在sha我。他的声音像清泉般清冽沁人心脾，也如他的年纪一般富有少年感。我以为他的音色在高音区是最漂亮的，听了《city of stars》发现低音区也美得不行。或者说他只要开口就是真绝色。不得不说命运真是眷顾他，不仅给了他这么美的音色，还给了他极佳的发声条件，未满19岁已经非常通透了，夸一句天才不为过。最让人嫉妒的是，这个人根本没有短板，舞蹈像他的歌声一样充满灵性，表情管理也超绝，年轻人高手美腿长长得还帅，aqy的防爆和舞台真是配不上他的天赋和努力。希望老天爷开开眼让这个超绝男孩走花路吧</description>
     </item>
     
   </channel>

@@ -6,19 +6,36 @@
     <description>Recent content on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 30 Dec 2016 21:49:57 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 22 May 2019 21:49:57 -0700</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>A Plain Markdown Post</title>
-      <link>/2016/12/30/a-plain-markdown-post/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
+      <title>爬虫</title>
+      <link>/2019/05/22/%E7%88%AC%E8%99%AB/</link>
+      <pubDate>Wed, 22 May 2019 21:49:57 -0700</pubDate>
       
-      <guid>/2016/12/30/a-plain-markdown-post/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
+      <guid>/2019/05/22/%E7%88%AC%E8%99%AB/</guid>
+      <description>爬爬爬爬爬</description>
+    </item>
+    
+    <item>
+      <title>影评</title>
+      <link>/2019/05/22/%E5%BD%B1%E8%AF%84/</link>
+      <pubDate>Wed, 22 May 2019 13:09:13 -0600</pubDate>
+      
+      <guid>/2019/05/22/%E5%BD%B1%E8%AF%84/</guid>
+      <description>“大”人物这部电影，全部看下来唯一的感想，就是尬。 与其争论演员的演技是否到位，不如争论人物设定和剧情设置是否合理。 首先，一个警察，他的性格可以是嫉恶如仇的，可以是热心善良的，但我怎么也无法想象会像这部电影里一样冲动，易怒，不考虑后果，不服从安排，完全是一个有勇无谋的弱智莽夫。让我最费解的，就是孙大圣开着车直接赶到他们交谈现场放狠话后离开的那一段，请问有任何设置的必要吗？如果是想呼应一下赵泰留学归来非要秀一下自己蹩脚的英语当我没说。 然后，是赵泰这个角色。他在意自己的私生子身份，在意父亲对他的看法，他很狂，但为什么会是电影里这种狂法？如果玩世不恭是他的保护机制，为什么他会在不希望损害公司形象的同时用最极端的方式去对付一个只希望讨回几千元的申诉人？如果要用他吸du情绪无法控制来解释，那为什么在影片的最后他一个处于du瘾发作状态的人可以和一个能凭一己之力撂倒五个以上保镖的老刑警打得难舍难分？并且以最后结果来看似乎这个纨绔子弟更胜一筹？这部电影赵泰的所有表现，都只证明他是个坏人，而不是人。 再者，就是赵泰包养的女明星这个角色的状态。她代言被否后怒气冲冲给拦路保镖一巴掌的样子像极了爱情，但按理来说，她是一个靠着富二代上位的女明星，一个被推去做权色交易的工具，为什么会这么理直气壮？她的设定也不是【女朋友】吧，她的一切都是赵泰给的，她可以闹，但不应该以这样的状态闹，他们的地位从来就不平等，这一点她自己心知肚明。之后被赵泰注射du品这段也证明了，她在赵泰眼里就是一个玩物，那么她自己为什么会到了最后都没有清醒？ 如果这部电影想讲的是小人物对抗大人物，底层对抗强权，中途却又出现了其他力量的介入，主题就完全变味了。这电影讲的不是小人物的奋起反抗，而是反黑反贪的决心。 有人拿这部片和无名之辈相提并论，我认为这两部片完全没有任何可比性。无名之辈讲的，是真正的无名之辈，是我们的故事。而大人物里所谓的小人物，不过是被机制使用的棋子。</description>
+    </item>
+    
+    <item>
+      <title>追星纪实</title>
+      <link>/2019/05/21/%E8%BF%BD%E6%98%9F%E7%BA%AA%E5%AE%9E/</link>
+      <pubDate>Tue, 21 May 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/05/21/%E8%BF%BD%E6%98%9F%E7%BA%AA%E5%AE%9E/</guid>
+      <description>文邺辰今天又在sha我。他的声音像清泉般清冽沁人心脾，也如他的年纪一般富有少年感。我以为他的音色在高音区是最漂亮的，听了《city of stars》发现低音区也美得不行。或者说他只要开口就是真绝色。不得不说命运真是眷顾他，不仅给了他这么美的音色，还给了他极佳的发声条件，未满19岁已经非常通透了，夸一句天才不为过。最让人嫉妒的是，这个人根本没有短板，舞蹈像他的歌声一样充满灵性，表情管理也超绝，年轻人高手美腿长长得还帅，aqy的防爆和舞台真是配不上他的天赋和努力。希望老天爷开开眼让这个超绝男孩走花路吧</description>
     </item>
     
     <item>
@@ -28,26 +45,6 @@
       
       <guid>/about/</guid>
       <description>This is a &amp;ldquo;hello world&amp;rdquo; example website for the blogdown package. The theme was forked from @jrutheiser/hugo-lithium-theme and modified by Yihui Xie.</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/2015/07/23/hello-r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/2015/07/23/hello-r-markdown/</guid>
-      <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/2015/01/01/lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      
-      <guid>/2015/01/01/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
     </item>
     
   </channel>
