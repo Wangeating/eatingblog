@@ -1,13 +1,29 @@
 ---
-title: '爬虫尝试101'
+title: '爬虫尝试101-1'
 date: '2019-05-28'
 ---
 ```{r}
-library(rvest)
-url<-'http://www.gov.cn/premier/2019-03/16/content_5374314.htm'
-web<-read_html(url,en0coding="utf-8")
-position<-web %>% html_nodes("div.pages_content") %>% html_text()
-position
+library("dplyr") # 管道操作符所属的包
+library("rvest")
+IMUFE_url <- "http://www.imufe.edu.cn"
+allSourceCode <- IMUFE_url %>%	
+	read_html(encoding = "UTF-8") 
+allSourceCode <- allSourceCode %>% 
+	html_node("div[id=binf]")
+IMUFE_text <- allSourceCode %>% 
+	html_nodes("a") %>% 
+	html_text()
+IMUFE_text
+IMUFE_url <- allSourceCode %>% 
+	html_nodes("a") %>%
+	html_attrs()
+for (i in 1:length(IMUFE_url)) {
+  IMUFE_url[[i]] <- IMUFE_url[[i]][1]
+}
+IMUFE_url <- cbind(IMUFE_url)
+IMUFE_url
+IMUFE_data_frame <- data.frame(IMUFE_text,IMUFE_url)
+IMUFE_data_frame
 
 
 ```
