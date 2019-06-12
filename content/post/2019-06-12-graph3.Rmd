@@ -1,0 +1,42 @@
+---
+title: graph3
+author: 'moxigandashu '
+date: '2019-06-12'
+slug: graph3
+categories:
+  - R
+tags: []
+---
+画图尝试3
+```{r}
+boxplot(mtcars$mpg,main="Box plot",ylab ="Miles per Gallon")       #标准箱线图
+
+boxplot(mpg ~ cyl,data= mtcars,
+       main="car milesge data",
+       xlab= "Number of cylinders",
+       ylab= "Miles per Gallon")
+
+boxplot(mpg ~ cyl,data= mtcars,
+        notch=TRUE,         #含有凹槽的箱线图
+        varwidth = TRUE,        #宽度和样本大小成正比
+        col= "red",
+        main="car milesge data",
+        xlab= "Number of cylinders",
+        ylab= "Miles per Gallon")
+
+mtcars$cyl.f<- factor(mtcars$cyl,         #转换成因子结构
+                      levels= c(4,6,8),
+                      labels = c("4","6","8"))
+mtcars$am.f <- factor(mtcars$am,levels = c(0,1),
+                      labels = c("auto","standard"))
+boxplot(mpg~ am.f*cyl.f,       #分组的箱线图
+        data = mtcars,
+        varwidth=TRUE,
+        col= c("gold","darkgreen"),
+        main= "MPG Distribution by Auto Type",
+        xlab="Auto Type",
+        ylxb="Miles per Gallon")
+
+```
+
+

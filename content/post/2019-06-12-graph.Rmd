@@ -7,6 +7,7 @@ categories:
   - R
 tags: []
 ---
+画图初尝试
 ```{r}
 x <- mtcars[order(mtcars$mpg),]        #按照mpg排序
 x$cyl <-factor(x$cyl)      #将cyl变成因子数据结构类型
