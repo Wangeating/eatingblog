@@ -1,6 +1,6 @@
 ---
 title: graph1
-author: ''
+author: 'internet'
 date: '2019-06-12'
 slug: graph
 categories:
