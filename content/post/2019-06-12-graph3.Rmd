@@ -8,6 +8,7 @@ categories:
 tags: []
 ---
 画图尝试3
+这个图较为高级
 ```{r}
 boxplot(mtcars$mpg,main="Box plot",ylab ="Miles per Gallon")       #标准箱线图
 
@@ -38,5 +39,5 @@ boxplot(mpg~ am.f*cyl.f,       #分组的箱线图
         ylxb="Miles per Gallon")
 
 ```
-
+好看！
 
