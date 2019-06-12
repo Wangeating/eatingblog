@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.55.6" />
 
 
-<title>R - A Hugo website</title>
-<meta property="og:title" content="R - A Hugo website">
+<title>graph 2 - A Hugo website</title>
+<meta property="og:title" content="graph 2 - A Hugo website">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -20,7 +20,10 @@
 
 
 
-<link href="/categories/r/index.xml" rel="alternate" type="application/rss+xml" title="A Hugo website" />
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
@@ -57,41 +60,36 @@
 
 <main class="content" role="main">
 
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">graph 2</h1>
+
+    
+    <span class="article-date">2019-06-12</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>画图尝试2</p>
+<pre class="r"><code>library(vcd)</code></pre>
+<pre><code>## 载入需要的程辑包：grid</code></pre>
+<pre class="r"><code>attach(Arthritis)
+counts &lt;- table (Treatment,Improved)
+spine(counts,main = &quot;Spinogram Example&quot;)</code></pre>
+<p><img src="/post/2019-06-12-graph-2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>detach(Arthritis)</code></pre>
+<p>简单的几行代码就能绘制出图！神奇！</p>
+
+    </div>
+  </article>
+
   
-  <div class="archive">
-    
-    <h2 class="archive-title">2019</h2>
-    
-    <article class="archive-item">
-      <a href="/2019/06/12/graph3/" class="archive-item-link">graph3</a>
-      <span class="archive-item-date">
-        2019-06-12
-      </span>
-    </article>
-    
-    <article class="archive-item">
-      <a href="/2019/06/12/graph/" class="archive-item-link">graph1</a>
-      <span class="archive-item-date">
-        2019-06-12
-      </span>
-    </article>
-    
-    <article class="archive-item">
-      <a href="/2019/06/12/graph-2/" class="archive-item-link">graph 2</a>
-      <span class="archive-item-date">
-        2019-06-12
-      </span>
-    </article>
-    
-    <article class="archive-item">
-      <a href="/2019/05/21/%E8%BF%BD%E6%98%9F%E7%BA%AA%E5%AE%9E/" class="archive-item-link">追星纪实</a>
-      <span class="archive-item-date">
-        2019-05-21
-      </span>
-    </article>
-    
-    
-  </div>
+
 
 </main>
 
@@ -108,6 +106,18 @@
 
     </div>
     
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
     
 

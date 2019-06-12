@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.55.6" />
+
+
+<title>graph3 - A Hugo website</title>
+<meta property="og:title" content="graph3 - A Hugo website">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://weibo.com/u/2953268071?topnav=1">Me</a></li>
+    
+    <li><a href="https://www.bilibili.com/video/av45698194/">Music</a></li>
+    
+    <li><a href="https://weibo.com/u/6744235951?is_hot=1">WYC</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">graph3</h1>
+
+    
+    <span class="article-date">2019-06-12</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>画图尝试3 这个图较为高级</p>
+<pre class="r"><code>boxplot(mtcars$mpg,main=&quot;Box plot&quot;,ylab =&quot;Miles per Gallon&quot;)       #标准箱线图</code></pre>
+<p><img src="/post/2019-06-12-graph3_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>boxplot(mpg ~ cyl,data= mtcars,
+       main=&quot;car milesge data&quot;,
+       xlab= &quot;Number of cylinders&quot;,
+       ylab= &quot;Miles per Gallon&quot;)</code></pre>
+<p><img src="/post/2019-06-12-graph3_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+<pre class="r"><code>boxplot(mpg ~ cyl,data= mtcars,
+        notch=TRUE,         #含有凹槽的箱线图
+        varwidth = TRUE,        #宽度和样本大小成正比
+        col= &quot;red&quot;,
+        main=&quot;car milesge data&quot;,
+        xlab= &quot;Number of cylinders&quot;,
+        ylab= &quot;Miles per Gallon&quot;)</code></pre>
+<pre><code>## Warning in bxp(list(stats = structure(c(21.4, 22.8, 26, 30.4, 33.9, 17.8, :
+## some notches went outside hinges (&#39;box&#39;): maybe set notch=FALSE</code></pre>
+<p><img src="/post/2019-06-12-graph3_files/figure-html/unnamed-chunk-1-3.png" width="672" /></p>
+<pre class="r"><code>mtcars$cyl.f&lt;- factor(mtcars$cyl,         #转换成因子结构
+                      levels= c(4,6,8),
+                      labels = c(&quot;4&quot;,&quot;6&quot;,&quot;8&quot;))
+mtcars$am.f &lt;- factor(mtcars$am,levels = c(0,1),
+                      labels = c(&quot;auto&quot;,&quot;standard&quot;))
+boxplot(mpg~ am.f*cyl.f,       #分组的箱线图
+        data = mtcars,
+        varwidth=TRUE,
+        col= c(&quot;gold&quot;,&quot;darkgreen&quot;),
+        main= &quot;MPG Distribution by Auto Type&quot;,
+        xlab=&quot;Auto Type&quot;,
+        ylxb=&quot;Miles per Gallon&quot;)</code></pre>
+<p><img src="/post/2019-06-12-graph3_files/figure-html/unnamed-chunk-1-4.png" width="672" /> 好看！</p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

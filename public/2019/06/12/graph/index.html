@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.55.6" />
+
+
+<title>graph1 - A Hugo website</title>
+<meta property="og:title" content="graph1 - A Hugo website">
+
+
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="/css/fonts.css" media="all">
+<link rel="stylesheet" href="/css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="/" class="nav-logo">
+    <img src="/images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="https://weibo.com/u/2953268071?topnav=1">Me</a></li>
+    
+    <li><a href="https://www.bilibili.com/video/av45698194/">Music</a></li>
+    
+    <li><a href="https://weibo.com/u/6744235951?is_hot=1">WYC</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">graph1</h1>
+
+    
+    <span class="article-date">2019-06-12</span>
+    
+
+    <div class="article-content">
+      
+
+
+<p>画图初尝试</p>
+<pre class="r"><code>x &lt;- mtcars[order(mtcars$mpg),]        #按照mpg排序
+x$cyl &lt;-factor(x$cyl)      #将cyl变成因子数据结构类型
+x$color[x$cyl==4] &lt;-&quot;red&quot;   #新建一个color变量，油缸数cyl不同，颜色不同
+x$color[x$cyl==6] &lt;-&quot;blue&quot;
+x$color[x$cyl==8] &lt;-&quot;darkgreen&quot;
+dotchart(x$mpg,        #数据对象
+         labels = row.names(x),     #标签
+         cex = .7,#字体大小
+         groups = x$cyl,      #按照cyl分组
+         gcolor = &quot;black&quot;,    #分组颜色
+         color = x$color,     #数据点颜色
+         pch = 19,#点类型
+         main = &quot;Gas Mileage for car modes \n grouped by cylinder&quot;,    #标题
+         xlab = &quot;miles per gallon&quot;)     #x轴标签</code></pre>
+<p><img src="/post/2019-06-12-graph_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="/images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+

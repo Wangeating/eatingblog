@@ -6,27 +6,48 @@
     <description>Recent content in Posts on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>爬虫尝试1551</title>
-      <link>/2019/05/28/%E7%88%AC%E8%99%AB%E5%B0%9D%E8%AF%951551/</link>
-      <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+      <title>graph 2</title>
+      <link>/2019/06/12/graph-2/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/05/28/%E7%88%AC%E8%99%AB%E5%B0%9D%E8%AF%951551/</guid>
-      <description>library(&amp;quot;dplyr&amp;quot;) # 管道操作符所属的包## ## 载入程辑包：&amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(&amp;quot;rvest&amp;quot;)## 载入需要的程辑包：xml2IMUFE_url &amp;lt;- &amp;quot;http://www.imufe.edu.cn&amp;quot;allSourceCode &amp;lt;- IMUFE_url %&amp;gt;% read_html(encoding = &amp;quot;UTF-8&amp;quot;) allSourceCode &amp;lt;- allSourceCode %&amp;gt;% html_node(&amp;quot;div[id=binf]&amp;quot;)IMUFE_text &amp;lt;- allSourceCode %&amp;gt;% html_nodes(&amp;quot;a&amp;quot;) %&amp;gt;% html_text()IMUFE_text## [1] &amp;quot;党政办公室&amp;quot; &amp;quot;党委组织部(统战、党校)&amp;quot; ## [3] &amp;quot;党委宣传部&amp;quot; &amp;quot;纪委（监察审计处）&amp;quot; ## [5] &amp;quot;机关党总支&amp;quot; &amp;quot;离退休人员工作处&amp;quot; ## [7] &amp;quot;工会&amp;quot; &amp;quot;团委&amp;quot; ## [9] &amp;quot;教务处&amp;quot; &amp;quot;发展规划与教学评估办公室&amp;quot; ## [11] &amp;quot;科研处&amp;quot; &amp;quot;研究生教育与学科规划建设处&amp;quot; ## [13] &amp;quot;学生工作处&amp;quot; &amp;quot;招生就业指导处&amp;quot; ## [15] &amp;quot;人事处&amp;quot; &amp;quot;财务处&amp;quot; ## [17] &amp;quot;国有资产管理处&amp;quot; &amp;quot;基建规划处&amp;quot; ## [19] &amp;quot;保卫处&amp;quot; &amp;quot;后勤处&amp;quot; ## [21] &amp;quot;经济学院&amp;quot; &amp;quot;金融学院&amp;quot; ## [23] &amp;quot;资源与环境经济学院&amp;quot; &amp;quot;财政税务学院&amp;quot; ## [25] &amp;quot;商务学院&amp;quot; &amp;quot;工商管理学院&amp;quot; ## [27] &amp;quot;会计学院&amp;quot; &amp;quot;旅游学院&amp;quot; ## [29] &amp;quot;公共管理学院&amp;quot; &amp;quot;计算机信息管理学院&amp;quot; ## [31] &amp;quot;统计与数学学院&amp;quot; &amp;quot;法学院&amp;quot; ## [33] &amp;quot;人文学院&amp;quot; &amp;quot;外国语学院&amp;quot; ## [35] &amp;quot;马克思主义学院&amp;quot; &amp;quot;创业学院&amp;quot; ## [37] &amp;quot;国际合作与交流处（国际教育学院)&amp;quot; &amp;quot;职业学院&amp;quot; ## [39] &amp;quot;继续教育学院&amp;quot; &amp;quot;体育教学部&amp;quot; ## [41] &amp;quot;图书馆&amp;quot; &amp;quot;学报编辑部&amp;quot; ## [43] &amp;quot;信息化建设与管理中心&amp;quot; &amp;quot;经济管理实验实训中心&amp;quot; ## [45] &amp;quot;教师发展中心&amp;quot;IMUFE_url &amp;lt;- allSourceCode %&amp;gt;% html_nodes(&amp;quot;a&amp;quot;) %&amp;gt;%html_attrs()for (i in 1:length(IMUFE_url)) {IMUFE_url[[i]] &amp;lt;- IMUFE_url[[i]][1]}IMUFE_url &amp;lt;- cbind(IMUFE_url)IMUFE_url## IMUFE_url ## [1,] &amp;quot;http://www.</description>
+      <guid>/2019/06/12/graph-2/</guid>
+      <description>画图尝试2
+library(vcd)## 载入需要的程辑包：gridattach(Arthritis)counts &amp;lt;- table (Treatment,Improved)spine(counts,main = &amp;quot;Spinogram Example&amp;quot;)detach(Arthritis)简单的几行代码就能绘制出图！神奇！</description>
     </item>
     
     <item>
-      <title>爬虫day1</title>
-      <link>/2019/05/22/%E7%88%AC%E8%99%ABday1/</link>
-      <pubDate>Wed, 22 May 2019 21:49:57 -0700</pubDate>
+      <title>graph1</title>
+      <link>/2019/06/12/graph/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/2019/05/22/%E7%88%AC%E8%99%ABday1/</guid>
-      <description>我的rstudio卡炸了 心态崩了 terminal换了三个安装包都没加载出来过</description>
+      <guid>/2019/06/12/graph/</guid>
+      <description>画图初尝试
+x &amp;lt;- mtcars[order(mtcars$mpg),] #按照mpg排序x$cyl &amp;lt;-factor(x$cyl) #将cyl变成因子数据结构类型x$color[x$cyl==4] &amp;lt;-&amp;quot;red&amp;quot; #新建一个color变量，油缸数cyl不同，颜色不同x$color[x$cyl==6] &amp;lt;-&amp;quot;blue&amp;quot;x$color[x$cyl==8] &amp;lt;-&amp;quot;darkgreen&amp;quot;dotchart(x$mpg, #数据对象labels = row.names(x), #标签cex = .7,#字体大小groups = x$cyl, #按照cyl分组gcolor = &amp;quot;black&amp;quot;, #分组颜色color = x$color, #数据点颜色pch = 19,#点类型main = &amp;quot;Gas Mileage for car modes \n grouped by cylinder&amp;quot;, #标题xlab = &amp;quot;miles per gallon&amp;quot;) #x轴标签</description>
+    </item>
+    
+    <item>
+      <title>graph3</title>
+      <link>/2019/06/12/graph3/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/12/graph3/</guid>
+      <description>画图尝试3 这个图较为高级
+boxplot(mtcars$mpg,main=&amp;quot;Box plot&amp;quot;,ylab =&amp;quot;Miles per Gallon&amp;quot;) #标准箱线图boxplot(mpg ~ cyl,data= mtcars,main=&amp;quot;car milesge data&amp;quot;,xlab= &amp;quot;Number of cylinders&amp;quot;,ylab= &amp;quot;Miles per Gallon&amp;quot;)boxplot(mpg ~ cyl,data= mtcars,notch=TRUE, #含有凹槽的箱线图varwidth = TRUE, #宽度和样本大小成正比col= &amp;quot;red&amp;quot;,main=&amp;quot;car milesge data&amp;quot;,xlab= &amp;quot;Number of cylinders&amp;quot;,ylab= &amp;quot;Miles per Gallon&amp;quot;)## Warning in bxp(list(stats = structure(c(21.4, 22.8, 26, 30.4, 33.9, 17.8, :## some notches went outside hinges (&amp;#39;box&amp;#39;): maybe set notch=FALSEmtcars$cyl.f&amp;lt;- factor(mtcars$cyl, #转换成因子结构levels= c(4,6,8),labels = c(&amp;quot;4&amp;quot;,&amp;quot;6&amp;quot;,&amp;quot;8&amp;quot;))mtcars$am.</description>
+    </item>
+    
+    <item>
+      <title>爬虫尝试101</title>
+      <link>/2019/05/27/%E7%88%AC%E8%99%AB%E5%B0%9D%E8%AF%95101/</link>
+      <pubDate>Mon, 27 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/05/27/%E7%88%AC%E8%99%AB%E5%B0%9D%E8%AF%95101/</guid>
+      <description>library(&amp;quot;dplyr&amp;quot;) # 管道操作符所属的包## ## 载入程辑包：&amp;#39;dplyr&amp;#39;## The following objects are masked from &amp;#39;package:stats&amp;#39;:## ## filter, lag## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## intersect, setdiff, setequal, unionlibrary(&amp;quot;rvest&amp;quot;)## 载入需要的程辑包：xml2IMUFE_url &amp;lt;- &amp;quot;http://www.imufe.edu.cn&amp;quot;allSourceCode &amp;lt;- IMUFE_url %&amp;gt;% read_html(encoding = &amp;quot;UTF-8&amp;quot;) allSourceCode &amp;lt;- allSourceCode %&amp;gt;% html_node(&amp;quot;div[id=binf]&amp;quot;)IMUFE_text &amp;lt;- allSourceCode %&amp;gt;% html_nodes(&amp;quot;a&amp;quot;) %&amp;gt;% html_text()IMUFE_text## [1] &amp;quot;党政办公室&amp;quot; &amp;quot;党委组织部(统战、党校)&amp;quot; ## [3] &amp;quot;党委宣传部&amp;quot; &amp;quot;纪委（监察审计处）&amp;quot; ## [5] &amp;quot;机关党总支&amp;quot; &amp;quot;离退休人员工作处&amp;quot; ## [7] &amp;quot;工会&amp;quot; &amp;quot;团委&amp;quot; ## [9] &amp;quot;教务处&amp;quot; &amp;quot;发展规划与教学评估办公室&amp;quot; ## [11] &amp;quot;科研处&amp;quot; &amp;quot;研究生教育与学科规划建设处&amp;quot; ## [13] &amp;quot;学生工作处&amp;quot; &amp;quot;招生就业指导处&amp;quot; ## [15] &amp;quot;人事处&amp;quot; &amp;quot;财务处&amp;quot; ## [17] &amp;quot;国有资产管理处&amp;quot; &amp;quot;基建规划处&amp;quot; ## [19] &amp;quot;保卫处&amp;quot; &amp;quot;后勤处&amp;quot; ## [21] &amp;quot;经济学院&amp;quot; &amp;quot;金融学院&amp;quot; ## [23] &amp;quot;资源与环境经济学院&amp;quot; &amp;quot;财政税务学院&amp;quot; ## [25] &amp;quot;商务学院&amp;quot; &amp;quot;工商管理学院&amp;quot; ## [27] &amp;quot;会计学院&amp;quot; &amp;quot;旅游学院&amp;quot; ## [29] &amp;quot;公共管理学院&amp;quot; &amp;quot;计算机信息管理学院&amp;quot; ## [31] &amp;quot;统计与数学学院&amp;quot; &amp;quot;法学院&amp;quot; ## [33] &amp;quot;人文学院&amp;quot; &amp;quot;外国语学院&amp;quot; ## [35] &amp;quot;马克思主义学院&amp;quot; &amp;quot;创业学院&amp;quot; ## [37] &amp;quot;国际合作与交流处（国际教育学院)&amp;quot; &amp;quot;职业学院&amp;quot; ## [39] &amp;quot;继续教育学院&amp;quot; &amp;quot;体育教学部&amp;quot; ## [41] &amp;quot;图书馆&amp;quot; &amp;quot;学报编辑部&amp;quot; ## [43] &amp;quot;信息化建设与管理中心&amp;quot; &amp;quot;经济管理实验实训中心&amp;quot; ## [45] &amp;quot;教师发展中心&amp;quot;IMUFE_url &amp;lt;- allSourceCode %&amp;gt;% html_nodes(&amp;quot;a&amp;quot;) %&amp;gt;%html_attrs()for (i in 1:length(IMUFE_url)) {IMUFE_url[[i]] &amp;lt;- IMUFE_url[[i]][1]}IMUFE_url &amp;lt;- cbind(IMUFE_url)IMUFE_url## IMUFE_url ## [1,] &amp;quot;http://www.</description>
     </item>
     
     <item>
@@ -36,7 +57,7 @@
       
       <guid>/2019/05/21/%E8%BF%BD%E6%98%9F%E7%BA%AA%E5%AE%9E/</guid>
       <description>文邺辰今天又在sha我。 他的声音像清泉般清冽沁人心脾，也如他的年纪一般富有少年感。 我以为他的音色在高音区是最漂亮的，听了《city of stars》发现低音区也美得不行。 或者说他只要开口就是真绝色。 不得不说命运真是眷顾他，不仅给了他这么美的音色，还给了他极佳的发声条件，未满19岁已经非常通透了，夸一句天才不为过。 最让人嫉妒的是，这个人根本没有短板，舞蹈像他的歌声一样充满灵性，表情管理也超绝，年轻人高手美腿长长得还帅，aqy的防爆和舞台真是配不上他的天赋和努力。希望老天爷开开眼让这个超绝男孩走花路吧!
-2019-05-28 he must be a super singer</description>
+2019-05-28 he must be a perfect singer</description>
     </item>
     
     <item>

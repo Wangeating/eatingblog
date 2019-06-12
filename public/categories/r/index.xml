@@ -6,10 +6,40 @@
     <description>Recent content in R on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 May 2019 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 12 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>graph 2</title>
+      <link>/2019/06/12/graph-2/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/12/graph-2/</guid>
+      <description>画图尝试2
+library(vcd)## 载入需要的程辑包：gridattach(Arthritis)counts &amp;lt;- table (Treatment,Improved)spine(counts,main = &amp;quot;Spinogram Example&amp;quot;)detach(Arthritis)简单的几行代码就能绘制出图！神奇！</description>
+    </item>
+    
+    <item>
+      <title>graph1</title>
+      <link>/2019/06/12/graph/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/12/graph/</guid>
+      <description>画图初尝试
+x &amp;lt;- mtcars[order(mtcars$mpg),] #按照mpg排序x$cyl &amp;lt;-factor(x$cyl) #将cyl变成因子数据结构类型x$color[x$cyl==4] &amp;lt;-&amp;quot;red&amp;quot; #新建一个color变量，油缸数cyl不同，颜色不同x$color[x$cyl==6] &amp;lt;-&amp;quot;blue&amp;quot;x$color[x$cyl==8] &amp;lt;-&amp;quot;darkgreen&amp;quot;dotchart(x$mpg, #数据对象labels = row.names(x), #标签cex = .7,#字体大小groups = x$cyl, #按照cyl分组gcolor = &amp;quot;black&amp;quot;, #分组颜色color = x$color, #数据点颜色pch = 19,#点类型main = &amp;quot;Gas Mileage for car modes \n grouped by cylinder&amp;quot;, #标题xlab = &amp;quot;miles per gallon&amp;quot;) #x轴标签</description>
+    </item>
+    
+    <item>
+      <title>graph3</title>
+      <link>/2019/06/12/graph3/</link>
+      <pubDate>Wed, 12 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/12/graph3/</guid>
+      <description>画图尝试3 这个图较为高级
+boxplot(mtcars$mpg,main=&amp;quot;Box plot&amp;quot;,ylab =&amp;quot;Miles per Gallon&amp;quot;) #标准箱线图boxplot(mpg ~ cyl,data= mtcars,main=&amp;quot;car milesge data&amp;quot;,xlab= &amp;quot;Number of cylinders&amp;quot;,ylab= &amp;quot;Miles per Gallon&amp;quot;)boxplot(mpg ~ cyl,data= mtcars,notch=TRUE, #含有凹槽的箱线图varwidth = TRUE, #宽度和样本大小成正比col= &amp;quot;red&amp;quot;,main=&amp;quot;car milesge data&amp;quot;,xlab= &amp;quot;Number of cylinders&amp;quot;,ylab= &amp;quot;Miles per Gallon&amp;quot;)## Warning in bxp(list(stats = structure(c(21.4, 22.8, 26, 30.4, 33.9, 17.8, :## some notches went outside hinges (&amp;#39;box&amp;#39;): maybe set notch=FALSEmtcars$cyl.f&amp;lt;- factor(mtcars$cyl, #转换成因子结构levels= c(4,6,8),labels = c(&amp;quot;4&amp;quot;,&amp;quot;6&amp;quot;,&amp;quot;8&amp;quot;))mtcars$am.</description>
+    </item>
     
     <item>
       <title>追星纪实</title>
@@ -18,7 +48,7 @@
       
       <guid>/2019/05/21/%E8%BF%BD%E6%98%9F%E7%BA%AA%E5%AE%9E/</guid>
       <description>文邺辰今天又在sha我。 他的声音像清泉般清冽沁人心脾，也如他的年纪一般富有少年感。 我以为他的音色在高音区是最漂亮的，听了《city of stars》发现低音区也美得不行。 或者说他只要开口就是真绝色。 不得不说命运真是眷顾他，不仅给了他这么美的音色，还给了他极佳的发声条件，未满19岁已经非常通透了，夸一句天才不为过。 最让人嫉妒的是，这个人根本没有短板，舞蹈像他的歌声一样充满灵性，表情管理也超绝，年轻人高手美腿长长得还帅，aqy的防爆和舞台真是配不上他的天赋和努力。希望老天爷开开眼让这个超绝男孩走花路吧!
-2019-05-28 he must be a super singer</description>
+2019-05-28 he must be a perfect singer</description>
     </item>
     
   </channel>
