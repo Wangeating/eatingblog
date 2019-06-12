@@ -1,0 +1,19 @@
+---
+title: graph 2
+author: 'still internet'
+date: '2019-06-12'
+slug: graph-2
+categories:
+  - R
+tags: []
+---
+```{r}
+library(vcd)
+attach(Arthritis)
+counts <- table (Treatment,Improved)
+spine(counts,main = "Spinogram Example")
+detach(Arthritis)
+
+```
+
+
