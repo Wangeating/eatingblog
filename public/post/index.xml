@@ -6,10 +6,19 @@
     <description>Recent content in Posts on A Hugo website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 12 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 29 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>标准体系流程图</title>
+      <link>/2019/06/29/liuchengtu/</link>
+      <pubDate>Sat, 29 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/06/29/liuchengtu/</guid>
+      <description>## Registered S3 methods overwritten by &amp;#39;ggplot2&amp;#39;:## method from ## [.quosures rlang## c.quosures rlang## print.quosures rlang{&#34;x&#34;:{&#34;diagram&#34;:&#34;digraph Template1 {graph [rankdir = LR] node [shape=rectangle style=filled color=white fillcolor=salmon fontcolor=white arrowcolor=red alpha=55 fontname = \&#34;微软雅黑\&#34;] edge [color = grey]\n########################\n\&#34;新型智慧城市标准体系\&#34; - \&#34;总体标准\&#34;\n\&#34;新型智慧城市标准体系\&#34; - \&#34;基础设施标准\&#34;\n\&#34;新型智慧城市标准体系\&#34; - \&#34;建设与宜居\&#34;\n\&#34;新型智慧城市标准体系\&#34; - \&#34;管理与服务\&#34;\n\&#34;新型智慧城市标准体系\&#34; - \&#34;产业与经济\&#34;\n\&#34;新型智慧城市标准体系\&#34; - \&#34;安全与运维\&#34;\n\&#34;总体标准\&#34; - \&#34;术语\&#34;\n\&#34;总体标准\&#34; - \&#34;决策规划\&#34;\n\&#34;总体标准\&#34; - \&#34;顶层设计\&#34;\n\&#34;总体标准\&#34; - \&#34;评价指标\&#34;\n\&#34;基础设施标准\&#34; - \&#34;信息基础设施\&#34;\n\&#34;基础设施标准\&#34; - \&#34;水基础设施\&#34;\n\&#34;基础设施标准\&#34; - \&#34;</description>
+    </item>
     
     <item>
       <title>graph 2</title>
