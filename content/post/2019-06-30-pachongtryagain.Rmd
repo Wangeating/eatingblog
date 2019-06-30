@@ -1,0 +1,28 @@
+---
+title: 爬虫再尝试
+author: ''
+date: '2019-06-30'
+slug: pachongtryagain
+categories:
+  - R
+tags: []
+---
+尝试爬取2019年政府工作报告
+```{r}
+library(xml2)  
+library(rvest)  
+url<-'http://www.gov.cn/zhuanti/2019qglh/2019lhzfgzbg/' 
+web<-read_html(url,encoding="utf-8") 
+position<-web %>% html_nodes("div.event_box div p") %>% html_text()  
+library(jiebaRD)  
+library(jiebaR) 
+engine_s<-worker(stop_word = "C:\\stopwords.txt") 
+seg<-segment(position,engine_s) 
+f<-freq(seg) 
+f<-f[order(f[2],decreasing=TRUE),]
+library(yaml)
+library(wordcloud2)
+f1<-f[1:100,]     
+wordcloud2(f1, size = 0.8 ,shape='circle')  
+```
+
